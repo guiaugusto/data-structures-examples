@@ -19,15 +19,33 @@ def busca_binaria(list_elements, element):
 
 # Método para realizar busca sequencial comum
 
+def busca_sequencial_comum():
+    pass
+
 # Método para realizar busca sequencial com sentinela
+
+def busca_sequencial_sentinela():
+    pass
 
 # Método para realizar busca sequencial pelo método mover-para-frente
 
+def busca_sequencial_movtofront():
+    pass
+
 # Método para realizar busca sequencial pelo método da transposição
+
+def busca_sequencial_transposicao():
+    pass
 
 # Método para realizar busca sequencial indexada
 
+def busca_sequencial_indexada():
+    pass
+
 # Método para realizar busca sequencial duplamente indexada
+
+def busca_sequencial_dup_indexada():
+    pass
 
 # Método para inserir elementos dentro do vetor a ser utilizado
 def insere_elementos_ordenados(number_of_elements, list_elements, limit):
