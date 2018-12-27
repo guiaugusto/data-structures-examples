@@ -1,6 +1,12 @@
-elements = [1, 2, 3, 8, 14, 30, 5]
+import random
 
-number = input("Say a number to find in the array container: ")
+elements = random.sample(range(1000), 100)
+
+print('There is a list of elements builded!')
+
+print(elements)
+
+number = input('Say a number to find in the array container: ')
 
 elements.append(int(number))
 
