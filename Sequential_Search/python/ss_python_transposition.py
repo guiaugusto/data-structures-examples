@@ -11,7 +11,6 @@ number = int(input('Say a number to find in the array container: '))
 found = False
 
 for i in range(0, len(elements)):
-    print(elements[i])
     if elements[i] == number:
         tmp = elements[i-1]
         elements[i-1] = elements[i]
