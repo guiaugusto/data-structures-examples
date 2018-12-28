@@ -1,28 +1,33 @@
 # Uniformly distributed elements
-elements = [i for i in range(100)]
+elements = [i for i in range(0, 100, 2)]
 
 print(elements)
 
 selected_element = int(input('Say a number to find in the array container: '))
 
 inferior = 0
-superior = 100
+superior = len(elements)
 
 found = False
 latest = inferior
-i = inferior
+meio = inferior
 
 if selected_element < superior:
     while True:
-        latest = i
-        i = int(inferior + (superior - inferior) * ((selected_element-elements[inferior])/(elements[superior-1]-elements[inferior])))
+        latest = meio
+        meio = int(inferior + (superior - inferior) * ((selected_element-elements[inferior])/(elements[superior-1]-elements[inferior])))
 
-        if latest == i:
+        if meio == latest:
             break
-        
-        if elements[i-1] == selected_element:
+
+        if selected_element > elements[meio-1]:
+            superior = meio
+        elif selected_element < elements[meio-1]:
+            inferior = meio
+        elif selected_element == elements[meio-1]:
             found = True
-            break        
+            break
+
 
 if not found:
     print('Number {} was not found!'.format(selected_element))
